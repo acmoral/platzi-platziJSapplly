@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+  }
+.geometry{
+    display: flex;
+    align-items: center;
+    min-width: 40vw;
+    min-height:70vh;
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    margin:0;
+    padding: 0;
+}
+div.squareimage {
+    content:url("square.png");
+    max-height: 7vw;
+    max-width: 7vw;   
+    align-self: center;
+ }
+ div.triangleimage {
+    content:url("triangle.png");
+    max-height:7vw;
+    max-width: 7vw;   
+    align-self: center;
+ }
+ div.circleimage {
+    content:url("circle.png");
+    max-height: 9vw;
+    max-width: 9vw;   
+    align-self: center;
+ }​
+form{
+    min-height: 10vw;
+}
+.figura{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    min-width:25vw;
+    min-height: 30vw;
+    border-radius: 30px;
+    text-align: center;
+    color: #AE86BA;
+    backdrop-filter: blur(20px);
+    text-shadow: 2px 2px #1A0B1B;
+    padding: 2vw;
+    margin:0;
+    padding: 0;
+}
+alert{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -width;
+    margin-top: -height;
+}
+input{
+    max-width: 60px;
+    min-height: 3vw;
+    border-radius: 10px;
+    border-color: #AE86BA;
+    color:#C8AFCF;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1A0B1B;
+}
+
+button{
+    min-width:20px;
+    min-height: 3vw;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #AE86BA;
+    color:#C8AFCF;
+    background-color: #1A0B1B;
+}
+header{
+    
+    backdrop-filter: blur(10px);
+    max-width:fit-content;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    font-weight: bold;
+    font-size: x-large;
+    color: #AE86BA;
+    text-shadow: 2px 2px #1A0B1B;
+}
+header #title{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+header #description{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+body{
+    
+    font-family: "Comfortaa";
+    background-size: cover; 
+    background-image: url("back.jpg");
+    background-position: center;
+    height: 100%;
+}
