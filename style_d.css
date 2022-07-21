@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+    font-size: 70%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family: "Patrick Hand";
+    background-color: rgb(220, 234, 219), 215);
+}
+header{
+    background-color: rgb(93, 163, 32);
+    margin-left: auto;
+    color: rgb(224, 240, 205);
+    margin-right: auto;
+    text-align: center;
+    font-size: xx-large;
+    box-shadow: 5px 15px 5px 0px #07100d4c;
+}
+.ItemContainer{
+    background-size: cover;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-evenly;
+    box-shadow: 5px 15px 5px 0px #07100d4c;
+    max-height: max-content;
+    margin-top: 3vh;
+    
+}
+
+.fPrice{
+    background-color: rgba(93, 163, 32, 0.642);
+    color: rgb(239, 246, 232);
+}
+.fPrice:hover{
+    background-color: rgb(106, 185, 37);
+    color: rgb(255, 255, 255);
+}
+.bigDetails{
+    font-weight: bolder;
+    font-size:xx-large;
+}

@@ -54,14 +54,9 @@ form{
     margin:0;
     padding: 0;
 }
-alert{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -width;
-    margin-top: -height;
-}
+
 input{
+    font-family: "Comfortaa";
     max-width: 60px;
     min-height: 3vw;
     border-radius: 10px;
@@ -73,6 +68,7 @@ input{
 }
 
 button{
+    font-family: "Comfortaa";
     min-width:20px;
     min-height: 3vw;
     border-radius: 10px;
