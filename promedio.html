@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style-promedio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadística</title>
+</head>
+<body>
+    <header>
+        <h1>Introduce unos valores</h1>
+    </header>
+    <section class="page-content">
+        <div class="Input"> </div>
+        <button class ="botonmas" type="button" onClick="createInputValue()">+</button>
+        <div class="calculations">
+            <div class="singlec">
+                <button class ="buttoncalc" type="button" onClick="Promedios()">Promedio</button>
+                <img src="Imagen1.png" width="100px">
+            </div>
+            <div class="singlec">
+                <button class ="buttoncalc" type="button" onClick="Medianas()">Mediana</button>
+                <img src="Imagen2.png" width="100px">
+            </div>
+            <div class="singlec">
+                <button class ="buttoncalc" type="button" onClick="Modas()">Moda</button>
+                <img src="Imagen3.png" width="100px">
+            </div>
+        </div>
+    </section>
+    <script src="promedios.js"></script>
+    <script src="mediana.js"></script>
+    <script src="moda.js"></script>
+    <script src ="inputval.js"></script>
+</body>
+</html>
