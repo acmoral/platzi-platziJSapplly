@@ -19,13 +19,35 @@ function CalcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;   
     const perimetro  = perimetroCuadrado(value);
-    alert(perimetro);
+    const newDiv = document.createElement('div');
+    newDiv.id = "pop-up";
+    const x = document.createElement('button');
+    x.textContent="X";
+    x.id ='x';
+    x.addEventListener('click',function (){newDiv.parentElement.removeChild(newDiv)});
+    const pContainer = document.createElement('p');
+    pContainer.textContent = `El perimetro del cuadrado es ${perimetro}`;
+    newDiv.append(x,pContainer);
+    const mainNode = document.getElementsByClassName('geometry');
+    mainNode[0].append(newDiv);
+
 }
 function CalcularAreaCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;   
     const area  = areaCuadrado(value);
-    alert(area);
+    const newDiv = document.createElement('div');
+    newDiv.id = "pop-up";
+    const x = document.createElement('button');
+    x.textContent="X";
+    x.id ='x';
+    x.addEventListener('click',function (){newDiv.parentElement.removeChild(newDiv)});
+    const pContainer = document.createElement('p');
+    pContainer.textContent = `El area del cuadrado es ${area}`;
+    newDiv.append(x,pContainer);
+    const mainNode = document.getElementsByClassName('geometry');
+    mainNode[0].append(newDiv);
+
 }
 function CalcularPerimetroTriangulo(){
     const input1 = document.getElementById("InputTrianguloLado1");
@@ -36,7 +58,17 @@ function CalcularPerimetroTriangulo(){
     const value3 = input3.value;   
     const lados = [parseFloat(value1),parseFloat(value2),parseFloat(value3)]
     const perimetro  = perimetroTriangulo(lados);
-    alert(perimetro);
+    const newDiv = document.createElement('div');
+    newDiv.id = "pop-up";
+    const x = document.createElement('button');
+    x.textContent="X";
+    x.id ='x';
+    x.addEventListener('click',function (){newDiv.parentElement.removeChild(newDiv)});
+    const pContainer = document.createElement('p');
+    pContainer.textContent = `El perimetro del triangulo es ${perimetro}`;
+    newDiv.append(x,pContainer);
+    const mainNode = document.getElementsByClassName('geometry');
+    mainNode[0].append(newDiv);
 }
 function CalcularAreaTriangulo(){
     const input1 = document.getElementById("InputTrianguloLado1");
@@ -48,17 +80,50 @@ function CalcularAreaTriangulo(){
     const lados = [parseFloat(value1),parseFloat(value2),parseFloat(value3)]
     const s_0 = perimetroTriangulo(lados)/2;
     const perimetro  = areaTriangulo(s_0,lados);
-    alert(perimetro);
+    const newDiv = document.createElement('div');
+    newDiv.id = "pop-up";
+    const x = document.createElement('button');
+    x.textContent="X";
+    x.id ='x';
+    x.addEventListener('click',function (){newDiv.parentElement.removeChild(newDiv)});
+    const pContainer = document.createElement('p');
+    pContainer.textContent = `El area del triangulo es ${perimetro}`;
+    newDiv.append(x,pContainer);
+    const mainNode = document.getElementsByClassName('geometry');
+    mainNode[0].append(newDiv);
 }
+
 function CalcularPerimetroCirculo(){
     const input = document.getElementById("InputCirculo");
     const value = input.value;   
     const perimetro  = perimetroCirculo(value);
-    alert(perimetro);
+    const newDiv = document.createElement('div');
+    newDiv.id = "pop-up";
+    const x = document.createElement('button');
+    x.textContent="X";
+    x.id ='x';
+    x.addEventListener('click',function (){newDiv.parentElement.removeChild(newDiv)});
+    const pContainer = document.createElement('p');
+    pContainer.textContent = `El perimetro del circulo es ${perimetro}`;
+    newDiv.append(x,pContainer);
+    const mainNode = document.getElementsByClassName('geometry');
+    mainNode[0].append(newDiv);
+
 }
 function CalcularAreaCirculo(){
     const input = document.getElementById("InputCirculo");
     const value = input.value;   
     const area  = areaCirculo(value);
-    alert(area);
+    const newDiv = document.createElement('div');
+    newDiv.id = "pop-up";
+    const x = document.createElement('button');
+    x.textContent="X";
+    x.id ='x';
+    x.addEventListener('click',function (){newDiv.parentElement.removeChild(newDiv)});
+    const pContainer = document.createElement('p');
+    pContainer.textContent = `El area del circulo es ${area}`;
+    newDiv.append(x,pContainer);
+    const mainNode = document.getElementsByClassName('geometry');
+    mainNode[0].append(newDiv);
+
 }
