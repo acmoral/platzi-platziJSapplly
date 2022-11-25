@@ -23,6 +23,7 @@ window
             //crear imagen
             const imagen =  document.createElement('img');
             imagen.src = `${baseUrl}${item.image}`;
+            imagen.className='avocado-image';
             //big details container
             const bigDetails = document.createElement('div');
             bigDetails.className ="bigDetails";
